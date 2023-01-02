@@ -4,10 +4,13 @@ n = int(input('Input your number: '))
 
 my_list = []
 
-for i in range(2, n):
-        
+i = 2
 
+while i <= n:
+    if n % i == 0:
+        n = n // i
         my_list.append(i)
-
-
+        i = 2
+    else:
+        i = i + 1
 print(my_list)
