@@ -16,10 +16,8 @@ p = str(c[0])
 for j in range(1, k+1):
     p = str(c[j]) + '*x^' + str(j) + ' ' + '+' + ' ' + p
 
-p1 = p + ' = 0'
-
-print(p1)
+print(p)
 
 data = open('Exercise_4.txt', 'w')
-data.writelines(p1)
+data.writelines(p)
 data.close()
